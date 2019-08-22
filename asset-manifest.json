@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ebs-kids/static/css/main.85dc29e3.chunk.css",
-    "main.js": "/ebs-kids/static/js/main.ec97da4a.chunk.js",
-    "main.js.map": "/ebs-kids/static/js/main.ec97da4a.chunk.js.map",
-    "runtime~main.js": "/ebs-kids/static/js/runtime~main.08477fd0.js",
-    "runtime~main.js.map": "/ebs-kids/static/js/runtime~main.08477fd0.js.map",
-    "static/js/2.1b3a0643.chunk.js": "/ebs-kids/static/js/2.1b3a0643.chunk.js",
-    "static/js/2.1b3a0643.chunk.js.map": "/ebs-kids/static/js/2.1b3a0643.chunk.js.map",
-    "index.html": "/ebs-kids/index.html",
-    "precache-manifest.8f996e8c2ad616feee0fbf3c11c1798e.js": "/ebs-kids/precache-manifest.8f996e8c2ad616feee0fbf3c11c1798e.js",
-    "service-worker.js": "/ebs-kids/service-worker.js",
-    "static/css/main.85dc29e3.chunk.css.map": "/ebs-kids/static/css/main.85dc29e3.chunk.css.map"
+    "main.css": "/bang-gu-seok/static/css/main.7dd5d414.chunk.css",
+    "main.js": "/bang-gu-seok/static/js/main.a3d39393.chunk.js",
+    "main.js.map": "/bang-gu-seok/static/js/main.a3d39393.chunk.js.map",
+    "runtime~main.js": "/bang-gu-seok/static/js/runtime~main.ddac98f9.js",
+    "runtime~main.js.map": "/bang-gu-seok/static/js/runtime~main.ddac98f9.js.map",
+    "static/js/2.908c3ede.chunk.js": "/bang-gu-seok/static/js/2.908c3ede.chunk.js",
+    "static/js/2.908c3ede.chunk.js.map": "/bang-gu-seok/static/js/2.908c3ede.chunk.js.map",
+    "index.html": "/bang-gu-seok/index.html",
+    "precache-manifest.44b06296e39c0492b9f7760574775f69.js": "/bang-gu-seok/precache-manifest.44b06296e39c0492b9f7760574775f69.js",
+    "service-worker.js": "/bang-gu-seok/service-worker.js",
+    "static/css/main.7dd5d414.chunk.css.map": "/bang-gu-seok/static/css/main.7dd5d414.chunk.css.map"
   }
 }
