@@ -7,10 +7,27 @@
     {% include navbar.html %} {{ content }} {% include footer.html %} {% include
     scripts.html %} {% include google-analytics.html %} {% include darkmode.html
     %}
-    <a
-      href="javascript:;"
-      onclick="window.open('https://customer.happytalk.io/public_v1/chat_v4/public_point?go=C&is_login=N&uid=&site_id=1000223680&category_id=116612&division_id=116613&usergb=W&title=%5B%ED%85%8C%EC%8A%A4%ED%8A%B8+%EC%83%81%EB%8B%B4%EC%B0%BD%5D', '', 'width=350, height=500'); return false;"
-      ><img src="//happytalk.io/assets/main/img/btn-chat.png"
-    /></a>
+    <script>
+      window.__ht_wc = window.__ht_wc || {};
+      window.__ht_wc.host = "design.happytalkio.com";
+      window.__ht_wc.site_id = "1000223680"; // site_id
+      window.__ht_wc.site_name = "다용테스트"; // 회사 이름
+      window.__ht_wc.category_id = "116612"; // 대분류 id
+      window.__ht_wc.division_id = "116613"; // 중분류 id
+      // 고정 및  Custom 파라미터 추가영역. 파라미터가 여러개인 경우 ,(콤마)로 구분
+      // window.__ht_wc.params = 'site_uid=abcd1234,parameter1=param1';
+
+      (function () {
+        var ht = document.createElement("script");
+        ht.type = "text/javascript";
+        ht.async = true;
+        ht.src =
+          ("https:" == document.location.protocol ? "https://" : "http://") +
+          window.__ht_wc.host +
+          "/web_chatting/tracking.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ht, s);
+      })();
+    </script>
   </body>
 </html>
