@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ecf0f1;
+  font-size: 16px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #454f5d;
+}
+
+div.max-width {
+  width: 1100px;
+  padding: 0px 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: color 0.5s, background-color 0.5s;
+  z-index: 99;
+}
+
+div.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1100px;
+  font-weight: bold;
+  padding: 0px 10px;
+}
+
+.nav-white {
+  color: #454f5d;
+  background-color: white;
+}
+
+#nav-right span {
+  margin: 0 10px;
+  font-weight: lighter;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+#nav-right span:hover {
+  font-weight: bolder;
+  border-bottom: 2px solid #ecf0f1;
+}
+
+.nav-white #nav-right span:hover {
+  border-bottom: 3px solid #454f5d;
+}
+
+div#first-section {
+  width: 100%;
+  min-width: 1100px;
+  height: 100vh;
+  background-image: url("image/web2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes goorm {
+  0% {
+    bottom: 25px;
+  }
+
+  100% {
+    bottom: 35px;
+  }
+}
+
+#arrow {
+  animation: goorm 0.5s ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  position: absolute;
+  bottom: 25px;
+  opacity: 0.7;
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+#arrow:hover {
+  opacity: 1;
+}
+
+h1 {
+  width: 1100px;
+  color: #fafafa;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  text-align: right;
+  padding-right: 30px;
+}
+
+span.main {
+  font-weight: bolder;
+}
+
+span.sub {
+  font-size: 0.5em;
+  font-weight: lighter;
+}
+
+span.highlight {
+  color: #f1c40f;
+}
+
+div.section {
+  width: 100%;
+  min-width: 1100px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.white-section {
+  background-color: #fafafa;
+}
+
+div.gray-section {
+  background-color: #f7f8fa;
+  background-image: linear-gradient(
+    to bottom,
+    #f0f1f1,
+    rgba(255, 255, 255, 0.13)
+  );
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(-30%);
+  }
+}
+
+img#map-icon {
+  animation: move 0.5s ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+div.circle {
+  width: 150px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: gray;
+  opacity: 0.1;
+}
+
+div.map-wrapper {
+  z-index: 10;
+}
+
+div.text-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: normal;
+  z-index: 10;
+}
+
+div.text-wrapper.text-right {
+  text-align: right;
+}
+
+div.text-wrapper p {
+  font-size: 3.5rem;
+  line-height: 1.3em;
+}
+
+div.confetti {
+  width: 100%;
+  min-width: 1100px;
+  height: 100%;
+  position: absolute;
+  background-image: url("image/confetti.png");
+  background-repeat: no-repeat;
+  background-size: cover 70%;
+  background-position: center;
+  transform: scale(0);
+  transition: transform 0.8s;
+  transition-timing-function: ease-in-out;
+  opacity: 0.5;
+}
+
+div.confetti.bigger {
+  transform: scale(1);
+}
+
+div.slide-wrapper {
+  position: absolute;
+  top: 165px;
+  right: 117px;
+  overflow: hidden;
+  width: 285px;
+  height: 550px;
+  display: flex;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+div.slide-wrapper img {
+  width: 285px;
+  position: absolute;
+}
+
+div.slide-wrapper img.selected {
+  z-index: 4;
+  animation: slide 0.5s ease-in-out;
+  animation-fill-mode: backwards;
+}
+div.slide-wrapper img.second {
+  z-index: 3;
+}
+
+#third-section ul {
+  margin-top: 50px;
+}
+
+#third-section ul li {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+#third-section ul li.selected {
+  font-weight: bolder;
+  border-bottom: 3px solid #454f5d;
+}

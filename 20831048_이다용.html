@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>과제</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <div class="nav-wrapper">
+          <span>자기소개</span>
+          <div id="nav-right">
+            <span>홈</span>
+            <span>주소</span>
+            <span>프로젝트</span>
+          </div>
+        </div>
+      </nav>
+      <div id="first-section">
+        <h1>
+          <span class="sub"
+            >미래의 <span class="highlight">풀스택개발자</span></span
+          ><br />이다용
+        </h1>
+        <img id="arrow" src="image/arrow.svg" width="60px" alt="" />
+      </div>
+      <div id="second-section" class="white-section section">
+        <div class="max-width">
+          <div class="map-wrapper">
+            <img id="map-icon" src="image/map.png" alt="" width="150px" />
+            <div class="circle"></div>
+          </div>
+          <div class="text-wrapper text-right">
+            <p>
+              <span class="main">사는곳</span><br />경기도 고양시 덕양구<br />백양로64
+              1303동 301호
+            </p>
+          </div>
+        </div>
+        <div class="confetti"></div>
+      </div>
+      <div id="third-section" class="gray-section section">
+        <div class="max-width">
+          <div class="text-wrapper">
+            <p>
+              <span class="main">작년에 2개월 동안<br />진행했던 프로젝트</span>
+            </p>
+            <ul>
+              <li class="selected">메인페이지</li>
+              <li>로그인/회원가입</li>
+              <li>상품상세페이지</li>
+              <li>장바구니</li>
+            </ul>
+          </div>
+          <div class="phone-wrapper">
+            <img
+              src="image/iphone2.png"
+              width="550px"
+              alt=""
+              style="position: relative; z-index: 5; right: -50px;"
+            />
+            <div class="slide-wrapper">
+              <img class="selected" src="image/page1.png" />
+              <img src="image/page2.png" />
+              <img src="image/page3.png" />
+              <img src="image/page4.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div style="height: 100vw;"></div> -->
+    </div>
+    <script>
+      const nav = Array.from(document.getElementsByTagName("nav"))[0];
+      const firstSection = document.getElementById("first-section");
+      const secondSection = document.getElementById("second-section");
+      const thirdSection = document.getElementById("third-section");
+      const confetti = Array.from(document.getElementsByClassName("confetti"));
+      const list = Array.from(document.getElementsByTagName("li"));
+      const slideImgs = Array.from(
+        document.getElementsByClassName("slide-wrapper")[0].children
+      );
+      const navRights = Array.from(
+        document.getElementById("nav-right").children
+      );
+      const arrow = document.getElementById("arrow");
+
+      let selectCount = 1;
+
+      window.addEventListener("scroll", () => {
+        const { scrollY, innerHeight } = window;
+        if (scrollY > 10) {
+          nav.classList.add("nav-white");
+        } else {
+          nav.classList.remove("nav-white");
+        }
+        if (
+          secondSection.offsetHeight / 2 + secondSection.offsetTop <=
+            scrollY + innerHeight &&
+          scrollY < secondSection.offsetHeight - 200 + secondSection.offsetTop
+        ) {
+          confetti[0].classList.add("bigger");
+        } else {
+          confetti[0].classList.remove("bigger");
+        }
+      });
+
+      list.map((el, index) => {
+        el.addEventListener("click", (e) => {
+          list.map((el2, index) => {
+            el2.classList.remove("selected");
+            slideImgs[index].classList.remove("second");
+            if (slideImgs[index].classList.contains("selected")) {
+              slideImgs[index].classList.add("second");
+            }
+            slideImgs[index].classList.remove("selected");
+          });
+          el.classList.add("selected");
+          slideImgs[index].classList.add("selected");
+        });
+      });
+
+      navRights.map((el, index) => {
+        el.addEventListener("click", () => {
+          switch (index) {
+            case 0:
+              window.scrollTo(0, firstSection.offsetTop);
+              break;
+            case 1:
+              window.scrollTo(0, secondSection.offsetTop);
+              break;
+            case 2:
+              window.scrollTo(0, thirdSection.offsetTop);
+              break;
+          }
+        });
+      });
+
+      arrow.addEventListener("click", () => {
+        window.scrollTo(0, secondSection.offsetTop);
+      });
+    </script>
+  </body>
+</html>
