@@ -454,13 +454,13 @@ $sidebar-display: "sidebar-display";
   }
   &:first-child {
     /* 3rem for topbar, 6rem for footer */
-    min-height: calc(100vh - #{$topbar-height} - #{$footer-height} - #{$post-extend-min-height});
+    // min-height: calc(100vh - #{$topbar-height} - #{$footer-height} - #{$post-extend-min-height});
   }
 }
 
 #post-wrapper {
-  min-height: calc(100vh - #{$topbar-height}
-    - #{$footer-height} - #{$post-extend-min-height})!important;
+  // min-height: calc(100vh - #{$topbar-height}
+  //   - #{$footer-height} - #{$post-extend-min-height})!important;
   .post-content {
     a:hover {
       @extend %link-hover;
