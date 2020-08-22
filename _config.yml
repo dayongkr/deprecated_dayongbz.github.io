@@ -19,25 +19,25 @@ description: >- # used by seo meta and the atom feed
 # Replace with the website url, e.g. 'https://username.github.io'
 url: "https://dayongbz.github.io"
 
-author: your_full_name # change to your full name
+author: Dayong Lee # change to your full name
 
-avatar: /assets/img/sample/avatar.jpg # support internet resources
+avatar: /assets/img/custom/avatar.jpg # support internet resources
 
 github:
-  username: github_username # change to your github username
+  username: dayongbz # change to your github username
 
 twitter:
   username: twitter_username # change to your twitter username
 
 social:
-  name: your_full_name # it will shows as the copyright owner in Footer
-  email: example@doamin.com # change to your email address
+  name: Dayong Lee # it will shows as the copyright owner in Footer
+  email: dayongbz@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/username # change to your twitter homepage
-    - https://github.com/username # change to your github homepage
+    # - https://github.com/daupmgbz # change to your github homepage
     # Uncomment below to add more social links
-    # - https://www.facebook.com/username
+    - https://www.facebook.com/dayongbz
     # - https://www.linkedin.com/in/username
 
 google_site_verification: google_meta_tag_verification # change to your verification string
@@ -63,8 +63,8 @@ google_analytics:
     cache: false # pv data local cache, good for the users from GFW area.
 
 disqus:
-  comments: false # boolean type, the global switch for posts comments.
-  shortname: "" # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  comments: true # boolean type, the global switch for posts comments.
+  shortname: "dayongbz" # Fill with your Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # Prefer color scheme setting, available values:
 #
