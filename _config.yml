@@ -9,12 +9,10 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 title: Dayong Lee # the main title
 
-tagline: A text-focused Jekyll theme. # it will display as the sub-title
+tagline: I want be a helpful developer  # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, portfolio, sidebar,
-  bootstrap Jekyll theme with responsive web design
-  and focuses on text presentation.
+  it, java, javascript, js, react, developer, devlog, blog, dev, engineer, software
 
 # Replace with the website url, e.g. 'https://username.github.io'
 url: "https://dayongbz.github.io"
