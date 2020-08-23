@@ -27,6 +27,9 @@ github:
 twitter:
   username: twitter_username # change to your twitter username
 
+facebook:
+  username: dayongbz
+
 social:
   name: Dayong Lee # it will shows as the copyright owner in Footer
   email: dayongbz@gmail.com # change to your email address
