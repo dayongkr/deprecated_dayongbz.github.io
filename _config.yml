@@ -9,7 +9,7 @@
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 title: Dayong Lee # the main title
 
-tagline: I want be a helpful developer  # it will display as the sub-title
+tagline: I want be a helpful developer # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   it, java, javascript, js, react, developer, devlog, blog, dev, engineer, software
@@ -76,7 +76,7 @@ disqus:
 #
 #     dark   - Use the dark color scheme
 #
-theme_mode: light
+theme_mode: dual
 
 # boolean type, global switch for ToC in posts.
 toc: true
